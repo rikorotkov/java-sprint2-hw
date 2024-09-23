@@ -17,7 +17,6 @@ public class Main {
                     stepTracker.addNewNumberStepsPerDay();
                 } else if (Integer.parseInt(command) == 2) {
                     System.out.println("Введите новую цель по количеству шагов в день.");
-
                     int stepGoal = scanner.nextInt();
                     stepTracker.changeStepGoal(stepGoal);
                 } else if (Integer.parseInt(command) == 3) {

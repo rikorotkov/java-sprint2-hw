@@ -25,6 +25,7 @@ public class StepTracker {
 
         if (!(month > 0 && month <= 12)) {
             System.out.println("Вы ввели неправильный номер месяца.");
+            return;
         }
 
         System.out.println("Введите день от 1 до 30 (включительно)");
@@ -33,6 +34,7 @@ public class StepTracker {
 
         if (!(day > 0 && day < 31)) {
             System.out.println("Вы ввели неправильный день месяца.");
+            return;
         }
 
         System.out.println("Введите количество шагов");
@@ -41,6 +43,7 @@ public class StepTracker {
 
         if (steps < 0) {
             System.out.println("Количество шагов должно быть больше 0.");
+            return;
         }
 
         // получение соответствующего объекта MonthData из массива
