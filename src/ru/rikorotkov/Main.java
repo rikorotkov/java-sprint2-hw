@@ -12,16 +12,17 @@ public class Main {
 
             try {
                 String command = scanner.next();
+                int commandParseInt = Integer.parseInt(command);
 
-                if (Integer.parseInt(command) == 1) {
+                if (commandParseInt == 1) {
                     stepTracker.addNewNumberStepsPerDay();
-                } else if (Integer.parseInt(command) == 2) {
+                } else if (commandParseInt == 2) {
                     System.out.println("Введите новую цель по количеству шагов в день.");
                     int stepGoal = scanner.nextInt();
                     stepTracker.changeStepGoal(stepGoal);
-                } else if (Integer.parseInt(command) == 3) {
+                } else if (commandParseInt == 3) {
                     stepTracker.printStatistic();
-                } else if (Integer.parseInt(command) == 4) {
+                } else if (commandParseInt == 4) {
                     return;
                 } else {
                     System.out.println("Неверная команда.");
